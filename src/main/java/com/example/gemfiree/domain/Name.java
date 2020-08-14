@@ -28,4 +28,13 @@ public class Name {
     public void setLast(String last) {
         this.last = last;
     }
+
+    public Name() {
+    }
+
+    public Name(String title, String first, String last) {
+        this.title = title;
+        this.first = first;
+        this.last = last;
+    }
 }

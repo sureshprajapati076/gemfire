@@ -2,6 +2,7 @@ package com.example.gemfiree.domain;
 
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.gemfire.mapping.annotation.Region;
 
 
@@ -12,12 +13,22 @@ public class RandomUser {
     private String email;
     private String gender;
 
-
-
     private String phone;
     private Name name;
 
     private Location location;
+
+    public RandomUser() {
+    }
+
+    @PersistenceConstructor
+    public RandomUser(String email, String gender, String phone, Name name, Location location) {
+        this.email = email;
+        this.gender = gender;
+        this.phone = phone;
+        this.name = name;
+        this.location = location;
+    }
 
     public Location getLocation() {
         return location;

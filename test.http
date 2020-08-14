@@ -1,9 +1,0 @@
-GET https://randomuser.me/api?results=20
-
-
-
-
-
-###
-
-GET http://localhost:9909/fetch?results=1000
