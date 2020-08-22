@@ -1,0 +1,2 @@
+GET https://swagger-gemfire-service.cfapps.io/fetch?results=100
+Content-Type: application/json
